@@ -28,6 +28,10 @@ alias dce='docker-compose exec'
 alias dcs='docker-compose stop'
 alias cdk='docker-compose kill'
 
+## Portainer
+
+alias portainer='docker run --name portainer --restart=always -d -p 9123:9000 -v /var/run/docker.sock:/var/run/docker.sock -v ~/.docker/data/Portainer:/data  portainer/portainer --no-auth'
+
 # TERRAFORM
 ###############
 
