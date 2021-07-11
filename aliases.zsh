@@ -28,6 +28,10 @@ alias dce='docker-compose exec'
 alias dcs='docker-compose stop'
 alias cdk='docker-compose kill'
 
+# TERRAFORM
+###############
+
+alias tf='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID hashicorp/terraform:light'
 alias glyphy='~/.docker-glyphhanger/docker-glyphhanger.sh'
 
 # SYMFONY
