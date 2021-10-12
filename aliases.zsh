@@ -1,3 +1,8 @@
+# PYTHON
+##############
+
+alias python='docker run --rm -it -u $UID:$UID python:3-alpine python'
+
 # PHP
 ###############
 
