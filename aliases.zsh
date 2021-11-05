@@ -19,8 +19,8 @@ alias php8x='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8
 
 ## Dependency
 
-alias composer:1='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID composer:1 composer'
-alias composer='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID composer:2 composer'
+alias composer:1='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/composer:1 composer'
+alias composer='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/composer:2 composer'
 
 ## Security
 
