@@ -11,13 +11,13 @@ alias php74='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:7
 
 alias php8='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli'
 alias php81='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.1-cli'
-alias php="php8"
+alias php="php81"
 
 ## Debuging
 
-alias phpx="php8x"
-alias php8x='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli--dev php' 
+alias php8x='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli--dev php'
 alias php81x='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.1-cli--dev php'
+alias phpx="php81x"
 
 ## Dependency
 
