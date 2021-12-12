@@ -8,7 +8,6 @@ alias python='docker run --rm -it -u $UID:$UID python:3-alpine python'
 
 alias php73='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:7.3-cli'
 alias php74='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:7.4-cli'
-
 alias php8='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli'
 alias php81='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.1-cli'
 alias php="php81"
@@ -21,7 +20,7 @@ alias phpx="php81x"
 
 ## Dependency
 
-alias composer:1='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/composer:1 composer'
+alias composer1='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/composer:1 composer'
 alias composer='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/composer:2 composer'
 
 ## Security
