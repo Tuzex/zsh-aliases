@@ -31,6 +31,7 @@ alias security-checker='docker run --rm -it -v $(pwd):/app -w /app symfonycorp/c
 
 alias phpunit='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli vendor/bin/phpunit -c phpunit.xml'
 alias phpstan='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1'
+alias phpmd='docker run --rm -it -v $(pwd):/app -w /app -u 1000:1000 phpqa/phpmd'
 alias codecept='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli vendor/bin/codecept'
 alias ecs='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.0-cli vendor/bin/ecs check -c ecs.php'
 
