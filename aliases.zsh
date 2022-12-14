@@ -71,13 +71,13 @@ alias vui='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8000:8000 
 
 ## Docker compose
 
-alias dcb='docker-compose build'
-alias dcu='docker-compose up --force-recreate --remove-orphans'
+alias dcb='docker compose build'
+alias dcu='docker compose up --force-recreate --remove-orphans'
 
-alias dce='docker-compose exec'
+alias dce='docker compose exec'
 
-alias dcs='docker-compose stop'
-alias cdk='docker-compose kill'
+alias dcs='docker compose stop'
+alias cdk='docker compose kill'
 
 ## Portainer
 
