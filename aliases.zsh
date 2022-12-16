@@ -93,7 +93,7 @@ alias tf='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID hashicorp/terr
 
 ## Link Checker
 
-alias linkchecker='docker run --rm -it -u $UID:$UID linkchecker/linkchecker -t 15'
+alias linkchecker='docker run --rm -it -u $UID:$UID ghcr.io/linkchecker/linkchecker:latest -t 15 --check-extern'
 
 ## Glyph Hanger
 
