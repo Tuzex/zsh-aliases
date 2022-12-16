@@ -40,20 +40,20 @@ alias ecs='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID tuzex/php:8.2
 # NODE
 ###############
 
-alias dnode='docker run --rm -it -v $(pwd):/app:delegated -w /app -u $UID:$UID node:18'
+alias node='docker run --rm -it -v $(pwd):/app:delegated -w /app -u $UID:$UID node:16'
 
 ## Dependency
 
 alias npm='dnode npm'
-alias npm:8080='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:18 npm'
-alias npm:3000='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 3000:3000 node:18 npm'
+alias npm:8080='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:16 npm'
+alias npm:3000='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 3000:3000 node:16 npm'
 
 alias npx='dnode npx'
-alias npx:1337='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:18 npx'
+alias npx:1337='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:16 npx'
 
 alias yarn='dnode yarn'
-alias yarn:8080='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:18 yarn'
-alias yarn:3000='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 3000:3000 node:18 yarn'
+alias yarn:8080='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 8080:8080 node:16 yarn'
+alias yarn:3000='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID -p 3000:3000 node:16 yarn'
 
 # TYPESCRIPT
 ###############
@@ -101,4 +101,4 @@ alias glyphy='~/.docker-glyphhanger/docker-glyphhanger.sh'
 
 ## Json Server
 
-alias jsonserver='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID node:18 npm'
+alias jsonserver='docker run --rm -it -v $(pwd):/app -w /app -u $UID:$UID node:16 npm'
