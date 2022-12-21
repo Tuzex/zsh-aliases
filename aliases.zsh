@@ -44,14 +44,14 @@ alias node='docker run --rm -it -v "$(pwd)":/app:delegated -w /app -u $UID:$UID 
 
 ## Dependency
 
-alias npm='dnode npm'
+alias npm='node npm'
 alias npm:8080='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:16 npm'
 alias npm:3000='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 3000:3000 node:16 npm'
 
-alias npx='dnode npx'
+alias npx='node npx'
 alias npx:1337='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:16 npx'
 
-alias yarn='dnode yarn'
+alias yarn='node yarn'
 alias yarn:8080='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:16 yarn'
 alias yarn:3000='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 3000:3000 node:16 yarn'
 
