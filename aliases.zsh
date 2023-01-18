@@ -96,8 +96,9 @@ alias tf='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID hashicorp/te
 alias linkchecker='docker run --rm -it -u $UID:$UID ghcr.io/linkchecker/linkchecker:latest -t 15 --check-extern'
 
 ## Glyph Hanger
+# use: glyphy --subset=*.ttf --formats=woff,woff2 --LATIN
 
-alias glyphy='~/.docker-glyphhanger/docker-glyphhanger.sh'
+alias glyphy='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID raeffs/glyphhanger'
 
 ## Json Server
 
