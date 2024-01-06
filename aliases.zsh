@@ -11,14 +11,16 @@ alias php74='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php
 alias php8='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.0-cli php'
 alias php81='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.1-cli php'
 alias php82='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli php'
-alias php="php82"
+alias php83='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli php'
+alias php="php83"
 
 ## Debuging
 
 alias php8x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.0-cli--dev php'
 alias php81x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.1-cli--dev php'
 alias php82x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli--dev php'
-alias phpx="php82x"
+alias php83x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli--dev php'
+alias phpx="php83x"
 
 ## Dependency
 
@@ -31,11 +33,11 @@ alias security-checker='docker run --rm -it -v "$(pwd)":/app -w /app symfonycorp
 
 ## Testing
 
-alias phpunit='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli vendor/bin/phpunit -c phpunit.xml'
-alias phpstan='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1'
+alias phpunit='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/phpunit -c phpunit.xml'
+alias phpstan='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1'
 alias phpmd='docker run --rm -it -v "$(pwd)":/app -w /app -u 1000:1000 phpqa/phpmd'
-alias codecept='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli vendor/bin/codecept'
-alias ecs='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli vendor/bin/ecs check -c ecs.php'
+alias codecept='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/codecept'
+alias ecs='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/ecs check -c ecs.php'
 
 # NODE
 ###############
