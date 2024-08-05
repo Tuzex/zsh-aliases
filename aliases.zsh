@@ -91,7 +91,7 @@ alias portainer='docker run --name portainer --restart=always -d -p 9123:9000 -v
 # TERRAFORM
 ###############
 
-alias tf='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID hashicorp/terraform:light'
+alias tf='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID hashicorp/terraform:latest'
 
 # TOOLS
 ###############
