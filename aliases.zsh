@@ -26,8 +26,7 @@ alias phpx="php84x"
 
 ## Dependency
 
-alias composer1='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/composer:1 composer'
-alias composer='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/composer:2 composer'
+alias composer='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID composer:2.8 composer'
 
 ## Security
 
