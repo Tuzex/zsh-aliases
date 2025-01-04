@@ -12,7 +12,8 @@ alias php8='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:
 alias php81='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.1-cli php'
 alias php82='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli php'
 alias php83='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli php'
-alias php="php83"
+alias php84='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli php'
+alias php="php84"
 
 ## Debuging
 
@@ -20,7 +21,8 @@ alias php8x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php
 alias php81x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.1-cli--dev php'
 alias php82x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.2-cli--dev php'
 alias php83x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli--dev php'
-alias phpx="php83x"
+alias php84x='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli--dev php'
+alias phpx="php84x"
 
 ## Dependency
 
@@ -33,11 +35,11 @@ alias security-checker='docker run --rm -it -v "$(pwd)":/app -w /app symfonycorp
 
 ## Testing
 
-alias phpunit='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/phpunit -c phpunit.xml'
-alias phpstan='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1'
+alias phpunit='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli vendor/bin/phpunit -c phpunit.xml'
+alias phpstan='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1'
 alias phpmd='docker run --rm -it -v "$(pwd)":/app -w /app -u 1000:1000 phpqa/phpmd'
-alias codecept='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/codecept'
-alias ecs='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.3-cli vendor/bin/ecs check -c ecs.php'
+alias codecept='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli vendor/bin/codecept'
+alias ecs='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID tuzex/php:8.4-cli vendor/bin/ecs check -c ecs.php'
 
 # NODE
 ###############
@@ -57,7 +59,9 @@ alias npx='node npx'
 alias npx:1337='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:20-alpine npx'
 
 alias yarn='node yarn'
+alias yarn16='node16 yarn'
 alias yarn:8080='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:20-alpine yarn'
+alias yarn16:8080='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 8080:8080 node:16-alpine yarn'
 alias yarn:3000='docker run --rm -it -v "$(pwd)":/app -w /app -u $UID:$UID -p 3000:3000 node:20-alpine yarn'
 
 # TYPESCRIPT
